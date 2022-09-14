@@ -3,20 +3,20 @@ import React, { useState } from "react";
 function Counter() {
   let [count, Setcount] = useState(0);
 
-  const addnum = () => {
-    Setcount = count + 1;
+  const increaseNumber = () => {
+    Setcount(count + 1);
   };
 
-  const subnum = () => {
-    Setcount = count - 1;
+  const decreaseNumber = () => {
+    Setcount(count - 1);
   };
 
   return (
     <>
-      <div>{count}</div>
+      <div className="ad">{count}</div>
       <div>
-        <button onClick={addnum}>+</button>
-        <button onClick={subnum}>-</button>
+        <button onClick={increaseNumber}>+</button>
+        <button onClick={decreaseNumber}>-</button>
       </div>
     </>
   );
