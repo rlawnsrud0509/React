@@ -1,4 +1,4 @@
-.rottoDiv {
+.lottoDiv {
   margin: 50px;
   background-color: pink;
   width: 1200px;
@@ -7,7 +7,7 @@
   display: flex;
 }
 
-.rotto {
+.lotto {
   display: flex;
   margin: auto;
   background-color: lightpink;
@@ -16,7 +16,7 @@
   border: 0;
   border-radius: 75px;
   transition-timing-function: ease-out;
-  transition-duration: 0.4s;
+  transition-duration: 0.25s;
   text-align: center;
 }
 
@@ -24,7 +24,7 @@
   background-color: lightblue;
 }
 
-.startR {
+.startL {
   position: absolute;
   width: 100px;
   height: 50px;
@@ -39,12 +39,12 @@
   transition-duration: 0.4s;
 }
 
-.startR:hover {
+.startL:hover {
   background-color: rgb(215, 159, 168);
   cursor: pointer;
 }
 
-.startR:active {
+.startL:active {
   background-color: lightpink;
   cursor: default;
   transition-timing-function: ease-out;

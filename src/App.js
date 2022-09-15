@@ -1,9 +1,9 @@
 import "./App.css";
-import "./rotto/rotto.css";
+import "./lotto/lotto.css";
 import Counter from "./counter.js";
 import CreateList from "./createList";
 import PrintInput from "./printInput.js";
-import Rotto from "./rotto/rotto";
+import Lotto from "./lotto/lotto";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Counter />
       <PrintInput />
       <CreateList />
-      <Rotto />
+      <Lotto />
     </div>
   );
 }
