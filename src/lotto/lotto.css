@@ -5,6 +5,7 @@
   height: 400px;
   justify-content: center;
   display: flex;
+  position: relative;
 }
 
 .lotto {
@@ -18,10 +19,21 @@
   transition-timing-function: ease-out;
   transition-duration: 0.25s;
   text-align: center;
+  justify-content: center;
 }
 
-#bonus {
+.bonus {
   background-color: lightblue;
+  display: flex;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border: 0;
+  border-radius: 75px;
+  transition-timing-function: ease-out;
+  transition-duration: 0.25s;
+  text-align: center;
+  justify-content: center;
 }
 
 .startL {
@@ -31,7 +43,7 @@
   border: 0;
   border-radius: 5px;
   background-color: lightpink;
-  top: 100%;
+  top: 80%;
   font-size: 18px;
   font-weight: bold;
   color: white;

@@ -8,6 +8,7 @@ const StyledBtn = styled.button`
   color: ${function (props) {
     return props.color;
   }};
+
   border: 3px solid aqua;
   border-radius: 2px;
   border: 1px solid white;
@@ -44,6 +45,7 @@ function CreateList() {
     console.log(i);
     setcreateLi(createLi.concat(<li className="List">{text}</li>));
     document.getElementById("scan").value = "";
+    setText((text = ""));
   };
 
   return (
