@@ -2,6 +2,23 @@
   color: wheat;
 }
 
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #root {
-  background-color: white;
+  font-size: 40px;
+  align-items: center;
+  font-weight: bold;
+  color: aqua;
+}
+
+.List {
+  background-color: aqua;
+  color: white;
+  border: 0;
+  margin: 20px;
 }

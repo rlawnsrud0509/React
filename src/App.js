@@ -1,5 +1,6 @@
 import "./App.css";
 import Counter from "./counter.js";
+import CreateList from "./createList";
 import PrintInput from "./printInput.js";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div>
       <Counter />
       <PrintInput />
+      <CreateList />
     </div>
   );
 }

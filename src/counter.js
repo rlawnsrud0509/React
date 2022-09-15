@@ -15,8 +15,12 @@ function Counter() {
     <>
       <div className="ad">{count}</div>
       <div>
-        <button onClick={increaseNumber}>+</button>
-        <button onClick={decreaseNumber}>-</button>
+        <button className="button" onClick={increaseNumber}>
+          +
+        </button>
+        <button className="button" onClick={decreaseNumber}>
+          -
+        </button>
       </div>
     </>
   );
