@@ -3,21 +3,29 @@ import React, { useState } from "react";
 function Lotto() {
   let [Lnum, setLnum] = useState(["", "", "", "", "", "", ""]);
   const setRandom = () => {
-    setLnum((Lnum = []));
+    setLnum((Lnum = ["", "", "", "", "", "", ""]));
+    for (let i = 0; i < 7; i++) {
+      document.getElementById(
+        `lotto${i + 1}`
+      ).firstChild.innerHTML = `${Lnum[i]}`;
+    }
     for (let i = 0; i < 7; i++) {
       setTimeout(function () {
-        let random = Math.round(Math.random() * 100);
+        let random = (Math.round(Math.random() * 100) % 6) + 1;
         for (let j = 0; j < i + 1; j++) {
-          if (Lnum[j] == random) {
+          if (Lnum[j] != random) {
+            setLnum((Lnum[i] = random));
+            console.log(i, Lnum[i]);
+            document.getElementById(
+              `lotto${i + 1}`
+            ).firstChild.innerHTML = `${Lnum[i]}`;
             i--;
-            continue;
+            break;
+          } else {
+            i--;
+            break;
           }
         }
-        setLnum((Lnum[i] = random));
-        console.log(i, Lnum[i]);
-        document.getElementById(
-          `lotto${i + 1}`
-        ).firstChild.innerHTML = `${Lnum[i]}`;
       }, 500 * (i + 1));
     }
   };
