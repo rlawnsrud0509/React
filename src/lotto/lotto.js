@@ -11,7 +11,7 @@ function Lotto() {
     }
     for (let i = 0; i < 7; i++) {
       setTimeout(function () {
-        let random = (Math.round(Math.random() * 100) % 6) + 1;
+        let random = (Math.round(Math.random() * 100) % 45) + 1;
         for (let j = 0; j < i + 1; j++) {
           if (Lnum[j] != random) {
             setLnum((Lnum[i] = random));
