@@ -1,4 +1,5 @@
 let Num: number = 3;
+let Numbe: string = "fffff";
 
 function Func(x: number): number {
   return x * 2;
