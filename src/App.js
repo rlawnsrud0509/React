@@ -4,6 +4,7 @@ import Counter from "./counter.js";
 import CreateList from "./createList";
 import PrintInput from "./printInput.js";
 import Lotto from "./lotto/lotto";
+import TypeSc from "./TYPESCRIPT/index.js";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <PrintInput />
       <CreateList />
       <Lotto />
+      <TypeSc />
     </div>
   );
 }

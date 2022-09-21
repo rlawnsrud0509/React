@@ -12,17 +12,16 @@ function Lotto() {
     for (let i = 0; i < 7; i++) {
       setTimeout(function () {
         let random = (Math.round(Math.random() * 100) % 45) + 1;
+        console.log("defalut" + random);
         for (let j = 0; j < i + 1; j++) {
           if (Lnum[j] != random) {
+            random = (Math.round(Math.random() * 100) % 45) + 1;
+            console.log("same: " + random);
             setLnum((Lnum[i] = random));
             console.log(i, Lnum[i]);
             document.getElementById(
               `lotto${i + 1}`
             ).firstChild.innerHTML = `${Lnum[i]}`;
-            i--;
-            break;
-          } else {
-            i--;
             break;
           }
         }

@@ -9,3 +9,5 @@ Func(123);
 
 type Member = [number, boolean];
 let john: Member = [123, true];
+
+console.log(Func(Num));
